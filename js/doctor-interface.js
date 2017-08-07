@@ -1,6 +1,6 @@
-//var Calculator = require('./../js/doctor.js').calculatorModule;
+
 //var apiKey = "2de1822ca011132fd454ee68052dfd79"; actual doctor api
-var apiKey = "e9c9d8bd9fdfabb69116a97bae75cfe5";
+var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
   $('#weather-location').click(function() {
