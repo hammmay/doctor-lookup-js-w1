@@ -35,12 +35,11 @@ gulp.task("build", ["clean"], function(){
 
 //neccesary? Only one js interface, and didn't shorten with * because there is only one file
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/pingpong-interface.js'])
+  return gulp.src(['./js/doctor-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
 
-//modified original to include concat
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
     .bundle()
