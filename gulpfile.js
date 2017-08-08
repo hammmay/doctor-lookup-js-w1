@@ -4,7 +4,7 @@ var buildProduction = utilities.env.production;
 var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
-var concat = require('gulp-concat'); //neccisary? Only one js interface
+var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var lib = require('bower-files')({
@@ -33,7 +33,7 @@ gulp.task("build", ["clean"], function(){
   gulp.start('bower');
 });
 
-//neccesary? Only one js interface, and didn't shorten with * because there is only one file
+
 gulp.task('concatInterface', function() {
   return gulp.src(['./js/doctor-interface.js'])
     .pipe(concat('allConcat.js'))
