@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script> 
-    <title>Doc Search</title>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Find A Doc</title>
   </head>
   <body>
-    <a href="doctor.html">Click for some docs</a>
+    <div class="container">
+      <h1>Not feeling well? We'll find you a doctor based on your symptoms.</h1>
+      <label for="location">Enter a symptom:</label>
+      <input id="location" type="text">
+      <button class="btn-success" id="weather-location">Find A Doc</button>
+      <div class="showWeather"></div>
+    </div>
   </body>
 </html>
