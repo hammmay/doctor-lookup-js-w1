@@ -11,5 +11,7 @@ $ gulp build
 $ gulp serve
 
 You must collect your own API key from the provider: https://developer.betterdoctor.com/
+
 -Once you have an API key, create an environmental file in the top directory and name it .env
+
 -Within the .env file, include the following exports code with your own API entered in: exports.apiKey = "YOUR-API-GOES-HERE";
